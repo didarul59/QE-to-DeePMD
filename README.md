@@ -1,1 +1,0 @@
-# pwMD-to-DeePMD
