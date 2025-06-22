@@ -1,4 +1,4 @@
-# Converting Quantum ESPRESSO Data to DeePMD Data
+# From Quantum ESPRESSO to DeePMD-kit: A Workflow for Atomistic Modeling
 
 This guide provides step-by-step instructions to convert Quantum ESPRESSO output files for use in DeePMD-kit training. All steps are technical; no theoretical background provided.
 
