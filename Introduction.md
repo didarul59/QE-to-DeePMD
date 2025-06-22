@@ -22,3 +22,8 @@ All steps are technical and practical, with minimal theory.
 - [QE-to-DeePMD converter script]([https://github.com/deepmodeling/deepmd-kit/tree/master/tools/convert/qe](https://github.com/didarul59/QE-relax_to_DeePMD.git)) (or your own script)
 
 ---
+## 📚 Resources
+
+- [Quantum ESPRESSO User Guide](https://www.quantum-espresso.org/Doc/pw_user_guide/)
+- [Quantum ESPRESSO Input Generator](https://qeinputgenerator.materialscloud.io/)
+- [Tutorial by Pranab Das](https://pranabdas.github.io/espresso/)
