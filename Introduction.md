@@ -10,3 +10,14 @@ We specifically focus on the example of SiO₂ (quartz), demonstrating:
 -  How to validate and apply the trained model in LAMMPS for large-scale simulations, including stress-strain analyses.
 
 All steps are technical and practical, with minimal theory.
+
+---
+
+## Prerequisites
+
+- A Linux system with Quantum Espresso Installed init
+- Python environment (recommended)
+- DeePMD-kit installed
+- [QE-to-DeePMD converter script]([https://github.com/deepmodeling/deepmd-kit/tree/master/tools/convert/qe](https://github.com/didarul59/QE-relax_to_DeePMD.git)) (or your own script)
+
+---
