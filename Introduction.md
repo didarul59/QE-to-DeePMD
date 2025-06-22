@@ -1,4 +1,5 @@
 # From Quantum ESPRESSO to DeePMD-kit: A Workflow for Atomistic Modeling
+
 <img src="workflow.png" align="right" width="300" style="margin-left: 20px; margin-bottom: 20px;">
 
 Modern atomistic simulations often bridge first-principles accuracy with machine learning speed. This tutorial provides a complete workflow starting from Density Functional Theory (DFT) calculations using Quantum ESPRESSO, through training a deep neural network interatomic potential using DeePMD-kit, and finally to running large-scale Molecular Dynamics (MD) simulations with LAMMPS using the trained model.
@@ -10,7 +11,7 @@ We specifically focus on the example of CH₄, demonstrating:
 - How to convert that data into a format suitable for DeePMD-kit and train a robust potential.
 - How to validate and apply the trained model in LAMMPS for large-scale simulations.
 
-All steps are technical and practical, with minimal theory.
+All steps are technical and practical, with minimal theory. This guide provides step-by-step instructions to convert Quantum ESPRESSO output files for use in DeePMD-kit training. All steps are technical; no theoretical background provided.
 
 ---
 
