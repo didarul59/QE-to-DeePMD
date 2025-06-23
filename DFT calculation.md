@@ -141,5 +141,4 @@ pw.x < pw.vcmd.in > opt.out
 # For parallel execution
 mpirun -np 4 pw.x -inp < pw.vcmd.in > opt.out
 ```
-- This generates a `deepmd_data` folder with DeePMD-compatible data.
-**
+You have to name the vc-md output as opt.out if you want to use my data conversion code.
