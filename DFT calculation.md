@@ -1,17 +1,8 @@
-# From Quantum ESPRESSO to DeePMD-kit: A Workflow for Atomistic Modeling
+# DFT Calculations
 
-This guide provides step-by-step instructions to convert Quantum ESPRESSO output files for use in DeePMD-kit training. All steps are technical; no theoretical background provided.
-
----
-
-## Prerequisites
-
-- Quantum ESPRESSO completed calculation (trajectory and energy/force files)
-- Python environment (recommended)
-- DeePMD-kit installed
-- [QE-to-DeePMD converter script]([https://github.com/deepmodeling/deepmd-kit/tree/master/tools/convert/qe](https://github.com/didarul59/QE-relax_to_DeePMD.git)) (or your own script)
-
----
+<p align="justify">
+Density Functional Theory (DFT) calculations form the backbone of DeePMD-kit, as they provide the high-accuracy reference data required for training deep neural network potentials. DeePMD-kit aims to bridge the gap between the accuracy of quantum mechanical simulations and the efficiency of classical molecular dynamics by learning the potential energy surface from first-principles calculations. In this workflow, DFT is used to simulate atomic configurations and compute corresponding energies, forces, and stress tensors. These data points serve as the ground truth for the neural network model.
+</p>
 
 ## Step 1: Run MD in Quantum Espresso
 
@@ -82,7 +73,7 @@ H                6.4099327761        4.9586685623        5.4472273628
 H                4.8877026768        5.4750308881        6.4399882797
 H                5.3278614319        6.2729289691        4.8738344379
 ```
-
+**
 ## Step 2: Run the VC-MD Calculation
 
 Remember you have to put the atomic positon of MD calculation to the input of the VC-MD or it will face convergence or thermal instability issues.
@@ -144,32 +135,11 @@ H                4.8877026768        5.4750308881        6.4399882797
 H                5.3278614319        6.2729289691        4.8738344379
 
 ```
-
+Run pw.x in self consistent mode..
+```bash
+pw.x < pw.vcmd.in > opt.out
+# For parallel execution
+mpirun -np 4 pw.x -inp < pw.vcmd.in > opt.out
+```
 - This generates a `deepmd_data` folder with DeePMD-compatible data.
-
-**Note:** Script names and options may vary based on the converter version. Always check the `README.md` in the converter tool directory.
-
-## Step 4: Verify the Converted Data
-
-- Check that the `deepmd_data` folder contains files like:
-  - `type.raw`
-  - `coord.raw`
-  - `box.raw`
-  - `energy.raw`
-  - `force.raw`
-- These files are ready for DeePMD-kit training.
-
-## Troubleshooting
-
-- If the script fails, check:
-  - File paths and names
-  - Python dependencies
-  - Converter script compatibility with your QE version
-
-For more details, refer to:
-- [DeePMD-kit Documentation](https://deepmd.readthedocs.io/en/latest/)
-- [QE-to-DeePMD Converter](https://github.com/deepmodeling/deepmd-kit/tree/master/tools/convert/qe)
-
----
-
-*End of technical guide*
+**
