@@ -45,3 +45,8 @@ After the run completes, you’ll find:
     ch4.dump: Atomic trajectories
 
 ```
+## Summary
+By now, you have learned the basic workflow of using DeePMD-kit, which includes extracting training data from DFT calculations (such as those performed with Quantum ESPRESSO), converting that data into DeePMD-compatible format, training a deep potential model, freezing and compressing the trained model, running molecular dynamics simulations in LAMMPS using the DP model, and performing model inference through Python to analyze properties like energy from simulation trajectories.
+For further reading, documentation, updates, and advanced features, please refer to the official GitHub repository:
+
+**DeePMD-kit GitHub:** [https://github.com/deepmodeling/deepmd-kit](https://github.com/deepmodeling/deepmd-kit)
