@@ -1,7 +1,7 @@
-#site_name: "From Quantum ESPRESSO to DeePMD-kit: A Workflow for Atomistic Modeling"
-site_name: "Material Modelling"
+site_name: "From Quantum ESPRESSO to DeePMD-kit"
+#site_name: "Material Modelling"
 
-repo_url: https://github.com/didarul59/QE-relax_to_DeePMD.git
+repo_url: https://github.com/didarul59/QE_to_DeePMD.git
 
 theme:
   name: material
