@@ -92,7 +92,7 @@ To compress the model, use the following command:
 dp compress -i graph.pb -o graph-compress.pb
 ```
 Upon execution, the terminal will display messages like:
-
+```bash
 DEEPMD INFO    stage 1: compress the model
 DEEPMD INFO    built lr
 DEEPMD INFO    built network
@@ -103,6 +103,6 @@ DEEPMD INFO    finished compressing
 DEEPMD INFO    stage 2: freeze the model
 DEEPMD INFO    Restoring parameters from model-compression/model.ckpt
 DEEPMD INFO    840 ops in the final graph
-
+```
 This process outputs a final compressed model file named graph-compress.pb.
 
