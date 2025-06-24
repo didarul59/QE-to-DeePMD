@@ -20,7 +20,8 @@ All steps are technical and practical, with minimal theory. This guide provides 
 - A Linux system with Quantum Espresso Installed init
 - Python environment (recommended)
 - DeePMD-kit installed
-- [QE-to-DeePMD converter script]([https://github.com/deepmodeling/deepmd-kit/tree/master/tools/convert/qe](https://github.com/didarul59/QE-relax_to_DeePMD.git)) (or your own script)
+- [DeePMD QE Conversion Tools](https://github.com/deepmodeling/deepmd-kit/tree/master/tools/convert/qe)
+ (or your own script)
 
 ---
 ## 📚 Resources
