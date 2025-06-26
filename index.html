@@ -2,6 +2,16 @@
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
+    <script>
+  try {
+    localStorage.setItem("__palette", JSON.stringify({
+      scheme: "light",
+      primary: "indigo",
+      accent: "indigo"
+    }));
+  } catch (e) {}
+</script>
+
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -52,16 +62,6 @@
 
     
     
-  <script>
-  // Force light mode
-  if (typeof __md_set === 'function') {
-    __md_set("__palette", {
-      "scheme": "light",
-      "primary": "indigo",
-      "accent": "indigo"
-    });
-  }
-  </script>
   
   </head>
   
