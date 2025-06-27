@@ -1,3 +1,19 @@
+/* Force light mode by setting the palette manually */
+:root {
+  color-scheme: light !important;
+}
+
+[data-md-color-scheme="slate"] {
+  display: none !important;
+}
+
+[data-md-color-scheme="default"] {
+  display: block !important;
+}
+
+
+
+
 /* Make all text the same color in light mode */
 [data-md-color-scheme="default"] {
   --md-typeset-color: #111111;  /* dark gray or use #000000 for pure black */
